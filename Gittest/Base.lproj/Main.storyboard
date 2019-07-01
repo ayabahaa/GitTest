@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,20 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gittest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sak-34-CBV">
-                                <rect key="frame" x="162.5" y="437.5" width="89" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic" translatesAutoresizingMaskIntoConstraints="NO" id="Cjk-s5-rhI">
+                                <rect key="frame" x="-233" y="-291" width="880" height="1318"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Sak-34-CBV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LRM-r7-cnk"/>
-                            <constraint firstItem="Sak-34-CBV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="y6Y-lC-rOC"/>
+                            <constraint firstItem="Cjk-s5-rhI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CID-fQ-C33"/>
+                            <constraint firstItem="Cjk-s5-rhI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lts-ki-UOP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,4 +34,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="pic" width="880" height="1318"/>
+    </resources>
 </document>
